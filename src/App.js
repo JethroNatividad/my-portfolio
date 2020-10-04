@@ -12,11 +12,13 @@ function App() {
           ))}
         </div>
       </div>
-
-      {/* intro */}
-      {/* Logo */}
-      {/* Name */}
-      {/* some text */}
+      <div className='app__intro'>
+        <div className='app__introContainer'>
+          <img className='app__introLogo' src={logo} alt='logo' />
+          <h1 className='app__introName'>Jethro Natividad</h1>
+          <h1 className='app__introText'>Let's build something together</h1>
+        </div>
+      </div>
 
       {/* about section */}
       {/* - about */}

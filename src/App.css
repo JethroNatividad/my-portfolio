@@ -18,3 +18,27 @@
   color: black;
   margin: 0 10px;
 }
+.app__intro {
+  width: 100vw;
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapercave.com%2Fwp%2FfxKGuF6.jpg&f=1&nofb=1);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  align-items: center;
+}
+.app__introLogo {
+  object-fit: contain;
+  height: 200px;
+}
+.app__introContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app__introName,
+.app__introText {
+  color: white;
+  font-weight: 300;
+}
