@@ -1,6 +1,9 @@
 import React from 'react';
 import './App.css';
 import logo from './logo.png';
+import Card from '@material-ui/core/Card';
+import CardMedia from '@material-ui/core/CardMedia';
+import CardActionArea from '@material-ui/core/CardActionArea';
 function App() {
   return (
     <div className='app'>
@@ -37,6 +40,20 @@ function App() {
               <a href={item.link}>{item.display}</a>
             ))}
           </div>
+        </div>
+      </div>
+      <div className='app__projects'>
+        <div className='app__projectsContainer'>
+          <div className='app__projectsTag'>- Projects</div>
+          <Card className='app__projectsCard'>
+            <CardActionArea>
+              <img
+                className='app__projectsCardImage'
+                src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FmJw4d-2M27E%2Fmaxresdefault.jpg&f=1&nofb=1'
+                alt='im'
+              />
+            </CardActionArea>
+          </Card>
         </div>
       </div>
       {/* Projects section */}
