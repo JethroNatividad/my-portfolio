@@ -1,15 +1,17 @@
 import React from 'react';
 import './App.css';
-
+import logo from './logo.png';
 function App() {
   return (
     <div className='app'>
-      {/* Header */}
-      {/* Logo */}
-      {/* about */}
-      {/* projects */}
-      {/* skills */}
-      {/* contact */}
+      <div className='app__header'>
+        <img className='app__headerLogo' src={logo} alt='logo' />
+        <div className='app__headerLinks'>
+          {['About', 'Header', 'Skills', 'Contact'].map((item) => (
+            <a href={`#${item}`}>{item}</a>
+          ))}
+        </div>
+      </div>
 
       {/* intro */}
       {/* Logo */}
