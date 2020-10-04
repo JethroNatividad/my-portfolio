@@ -1,6 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
 }
 .app__header {
   width: 100vw;
@@ -21,6 +26,7 @@
 .app__intro {
   width: 100vw;
   background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapercave.com%2Fwp%2FfxKGuF6.jpg&f=1&nofb=1);
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
@@ -41,4 +47,31 @@
 .app__introText {
   color: white;
   font-weight: 300;
+}
+.app__about {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.app__aboutContainer {
+  margin: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.app__aboutContainer2 {
+  margin-top: 150px;
+  margin-bottom: 80px;
+}
+.app__aboutText,
+.app__aboutEmail {
+  font-weight: 400;
+}
+.app__aboutEmail {
+  margin-top: 30px;
+}
+.app__aboutSocial > a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
 }
