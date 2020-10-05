@@ -8,7 +8,7 @@ function Header() {
     <div className={classes.root}>
       <img className={classes.logo} src={logo} alt='logo' />
       <div className={classes.links}>
-        {['About', 'Header', 'Skills', 'Contact'].map((item) => (
+        {['About', 'Projects', 'Skills', 'Contact'].map((item) => (
           <a href={`#${item}`}>{item}</a>
         ))}
       </div>

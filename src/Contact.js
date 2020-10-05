@@ -3,6 +3,7 @@ import { Button, TextField, Typography } from '@material-ui/core';
 import useStyles from './Contact.styles';
 import emailjs from 'emailjs-com';
 import useInputState from './hooks/useInputState';
+import ScrollableAnchor from 'react-scrollable-anchor';
 function Contact() {
   const [name, handleName, resetName] = useInputState('');
   const [email, handleEmail, resetEmail] = useInputState('');
@@ -30,39 +31,41 @@ function Contact() {
     resetMessage();
   };
   return (
-    <div className={classes.root}>
-      <form onSubmit={sendEmail}>
-        <Typography variant='h4'>Contact me</Typography>
-        <TextField
-          value={name}
-          onChange={handleName}
-          margin='normal'
-          label='Name'
-          name='user_name'
-        />
-        <TextField
-          type='email'
-          value={email}
-          onChange={handleEmail}
-          margin='normal'
-          label='Email'
-          name='user_email'
-        />
-        <TextField
-          value={message}
-          onChange={handleMessage}
-          name='message'
-          margin='normal'
-          placeholder='Message. . . '
-          multiline
-          rows={10}
-          variant='outlined'
-        />
-        <Button type='submit' variant='border' color='primary'>
-          Send
-        </Button>
-      </form>
-    </div>
+    <ScrollableAnchor id={'Contact'}>
+      <div className={classes.root}>
+        <form onSubmit={sendEmail}>
+          <Typography variant='h4'>Contact me</Typography>
+          <TextField
+            value={name}
+            onChange={handleName}
+            margin='normal'
+            label='Name'
+            name='user_name'
+          />
+          <TextField
+            type='email'
+            value={email}
+            onChange={handleEmail}
+            margin='normal'
+            label='Email'
+            name='user_email'
+          />
+          <TextField
+            value={message}
+            onChange={handleMessage}
+            name='message'
+            margin='normal'
+            placeholder='Message. . . '
+            multiline
+            rows={10}
+            variant='outlined'
+          />
+          <Button type='submit' variant='border' color='primary'>
+            Send
+          </Button>
+        </form>
+      </div>
+    </ScrollableAnchor>
   );
 }
 

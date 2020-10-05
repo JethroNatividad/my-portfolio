@@ -6,7 +6,9 @@ import Header from './Header';
 import Intro from './Intro';
 import Projects from './Projects';
 import Skills from './Skills';
+import { configureAnchors } from 'react-scrollable-anchor';
 function App() {
+  configureAnchors({ offset: -60, scrollDuration: 1000 });
   return (
     <div className='app'>
       <Header />
