@@ -1,26 +1,3 @@
-.app__projectsCard {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid black;
-}
-
-.app__projectsCard.Front {
-  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FmJw4d-2M27E%2Fmaxresdefault.jpg&f=1&nofb=1');
-  background-size: cover;
-}
-.app__projectsCard.Back {
-  justify-content: space-around;
-  align-items: center;
-}
-.app__projectsCardTitle {
-  text-align: center;
-}
-.app__projectsCardDescription {
-  padding: 20px;
-}
-
 .react-card-flip {
   height: 300px;
   width: 600px;
