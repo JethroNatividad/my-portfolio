@@ -8,12 +8,15 @@
   display: none;
 }
 .app__header {
+  position: fixed;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #1d1e22;
   background-color: #393f4d;
+  margin-bottom: 81px;
+  z-index: 100;
 }
 .app__headerLogo {
   object-fit: contain;
@@ -130,4 +133,20 @@
 .app__skills > div > p {
   line-height: 2;
   color: #d4d4dc;
+}
+.app__contact {
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  align-items: center;
+}
+.app__contact form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 40px;
 }

@@ -1,4 +1,4 @@
-import { Typography } from '@material-ui/core';
+import { Button, TextField, Typography } from '@material-ui/core';
 import React from 'react';
 import './App.css';
 import logo from './logo.png';
@@ -75,13 +75,23 @@ function App() {
           </p>
         </div>
       </div>
-
-      {/* Contact section */}
-      {/* Form */}
-      {/* username */}
-      {/* email */}
-      {/* message */}
-      {/* send button */}
+      <div className='app__contact'>
+        <form>
+          <Typography variant='h4'>Contact me</Typography>
+          <TextField margin='normal' label='Name' />
+          <TextField margin='normal' label='Email' />
+          <TextField
+            margin='normal'
+            placeholder='Message. . . '
+            multiline
+            rows={10}
+            variant='outlined'
+          />
+          <Button variant='border' color='primary'>
+            Send
+          </Button>
+        </form>
+      </div>
     </div>
   );
 }
