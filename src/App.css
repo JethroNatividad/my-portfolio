@@ -77,7 +77,7 @@
   margin: 0 10px;
 }
 .app__projects {
-  height: 500px;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
 }
@@ -87,11 +87,10 @@
   flex-direction: column;
   height: 100%;
 }
-.app__projectsCard {
-  height: 100px;
-  width: 100px;
-}
-.app__projectsCardImage {
-  object-fit: contain;
-  height: 100px;
+.app__projectsList {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }

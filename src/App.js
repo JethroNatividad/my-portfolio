@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
 import logo from './logo.png';
-import Card from '@material-ui/core/Card';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardActionArea from '@material-ui/core/CardActionArea';
+
+import Project from './Project';
 function App() {
   return (
     <div className='app'>
@@ -45,15 +44,11 @@ function App() {
       <div className='app__projects'>
         <div className='app__projectsContainer'>
           <div className='app__projectsTag'>- Projects</div>
-          <Card className='app__projectsCard'>
-            <CardActionArea>
-              <img
-                className='app__projectsCardImage'
-                src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FmJw4d-2M27E%2Fmaxresdefault.jpg&f=1&nofb=1'
-                alt='im'
-              />
-            </CardActionArea>
-          </Card>
+          <div className='app__projectsList'>
+            <Project />
+            <Project />
+            <Project />
+          </div>
         </div>
       </div>
       {/* Projects section */}
@@ -62,13 +57,6 @@ function App() {
       {/* Flippable card Project */}
       {/* Front: */}
       {/* IMAGE */}
-      {/* Back: */}
-      {/* title */}
-      {/* description */}
-      {/* technologies used */}
-      {/* preview button */}
-      {/* see live button */}
-      {/* source code button */}
 
       {/* Skills section */}
       {/* Skills list */}
