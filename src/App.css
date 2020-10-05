@@ -12,7 +12,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #1d1e22;
+  background-color: #393f4d;
 }
 .app__headerLogo {
   object-fit: contain;
@@ -20,7 +21,7 @@
 }
 .app__headerLinks > a {
   text-decoration: none;
-  color: black;
+  color: #d4d4dc;
   margin: 0 10px;
 }
 .app__intro {
@@ -45,14 +46,14 @@
 }
 .app__introName,
 .app__introText {
-  color: white;
+  color: #d4d4dc;
   font-weight: 300;
 }
 .app__about {
   height: 500px;
   display: flex;
   flex-direction: column;
-  background-color: #e9e9e9;
+  background-color: #d4d4dc;
 }
 .app__aboutContainer {
   margin: 20px 30px;
@@ -63,6 +64,9 @@
 .app__aboutContainer2 {
   margin-top: 150px;
   margin-bottom: 80px;
+}
+.app__tag {
+  color: #feda6a;
 }
 .app__aboutText,
 .app__aboutEmail {
@@ -80,6 +84,7 @@
   min-height: 500px;
   display: flex;
   flex-direction: column;
+  background-color: #393f4d;
 }
 .app__projectsContainer {
   margin: 20px 30px;
@@ -93,4 +98,36 @@
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.app__skills {
+  min-height: 400px;
+  display: flex;
+  flex-direction: row;
+  background-color: #1d1e22;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-top: 30px;
+}
+.app__skills > div {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.app__skills > div > li {
+  list-style: none;
+  color: #d4d4dc;
+  margin: 7px 0;
+}
+.app__skills > div > h5 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+}
+.app__skills > div > p {
+  line-height: 2;
+  color: #d4d4dc;
 }

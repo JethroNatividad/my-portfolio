@@ -1,3 +1,4 @@
+import { Typography } from '@material-ui/core';
 import React from 'react';
 import './App.css';
 import logo from './logo.png';
@@ -23,7 +24,7 @@ function App() {
       </div>
       <div className='app__about'>
         <div className='app__aboutContainer'>
-          <div className='app__aboutTag'>- about</div>
+          <div className='app__tag'>- about</div>
           <div className='app__aboutContainer2'>
             <h1 className='app__aboutText'>
               Lorem ipsum Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
@@ -47,21 +48,33 @@ function App() {
           <div className='app__projectsList'>
             <Project />
             <Project />
-            <Project />
           </div>
         </div>
       </div>
-      {/* Projects section */}
-      {/* - projects */}
-      {/* List of projects */}
-      {/* Flippable card Project */}
-      {/* Front: */}
-      {/* IMAGE */}
-
-      {/* Skills section */}
-      {/* Skills list */}
-      {/* technologies list */}
-      {/* some text */}
+      <div className='app__skills'>
+        <div className='app__skillsList'>
+          <Typography variant='h5'>Skills</Typography>
+          <li>Programming</li>
+          <li>Programming</li>
+          <li>Programming</li>
+          <li>Programming</li>
+        </div>
+        <div className='app__technologiesList'>
+          <Typography variant='h5'>Technology</Typography>
+          <li>Reactjs</li>
+          <li>Reactjs</li>
+          <li>Reactjs</li>
+          <li>Reactjs</li>
+        </div>
+        <div className='app__skillsText'>
+          <Typography variant='h5'>Text</Typography>
+          <p>
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make
+          </p>
+        </div>
+      </div>
 
       {/* Contact section */}
       {/* Form */}
