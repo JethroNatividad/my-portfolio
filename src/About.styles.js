@@ -18,7 +18,13 @@ export default makeStyles((theme) => ({
     marginBottom: 80,
   },
   text: { color: '#4d4c4d' },
-  email: { marginTop: 30, color: '#4d4c4d' },
+  email: {
+    marginTop: 30,
+    color: '#4d4c4d',
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '13px',
+    },
+  },
   social: {
     '& a': {
       textDecoration: 'none',

@@ -24,6 +24,7 @@ export default makeStyles((theme) => ({
       fontWeight: '400',
       [theme.breakpoints.down('xs')]: {
         fontSize: '13px',
+        margin: '0 10px',
       },
     },
     marginRight: '2%',

@@ -2,19 +2,27 @@ import { makeStyles } from '@material-ui/core';
 
 export default makeStyles((theme) => ({
   root: {
-    minHeight: 400,
+    minHeight: 500,
     display: 'flex',
     flexDirection: 'row',
     backgroundColor: '#1d1e22',
-    flexWrap: 'wrap',
-    justifyContent: 'space-evenly',
+
+    justifyContent: 'space-around',
     alignItems: 'flex-start',
     paddingTop: 30,
+    [theme.breakpoints.down('xs')]: {
+      flexDirection: 'column',
+      paddingLeft: '20px',
+      paddingBottom: '50px',
+    },
     '& > div': {
-      width: 300,
+      width: '29%',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'flex-start',
+      [theme.breakpoints.down('xs')]: {
+        width: '100%',
+      },
       '& > li': {
         listStyle: 'none',
         color: '#d4d4dc',

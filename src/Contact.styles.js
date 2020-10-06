@@ -8,10 +8,13 @@ export default makeStyles((theme) => ({
     backgroundColor: '#fff',
     alignItems: 'center',
     '& form': {
+      width: '450px',
+      [theme.breakpoints.down('xs')]: {
+        width: '70%',
+      },
       marginTop: 50,
       display: 'flex',
       flexDirection: 'column',
-      width: 500,
       border: '2px solid black',
       borderRadius: 15,
       padding: 40,
