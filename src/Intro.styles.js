@@ -12,6 +12,7 @@ export default makeStyles((theme) => ({
     justifyContent: 'center',
     height: 500,
     alignItems: 'center',
+    paddingTop: '81px',
   },
   logo: {
     objectFit: 'contain',

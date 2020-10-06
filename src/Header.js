@@ -1,4 +1,3 @@
-import { makeStyles } from '@material-ui/core';
 import React from 'react';
 import logo from './logo.png';
 import useStyles from './Header.styles';

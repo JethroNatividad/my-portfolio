@@ -7,10 +7,9 @@ export default makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     border: '1px solid black',
+    cursor: 'pointer',
   },
   front: {
-    backgroundImage:
-      'url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FmJw4d-2M27E%2Fmaxresdefault.jpg&f=1&nofb=1")',
     backgroundSize: 'cover',
   },
   back: {
@@ -22,5 +21,38 @@ export default makeStyles((theme) => ({
   },
   description: {
     padding: 20,
+  },
+  preview: {
+    position: 'absolute',
+    minWidth: '70%',
+    height: '500px',
+    border: '2px solid #000',
+    padding: theme.spacing(2, 4, 3),
+    display: 'flex',
+    justifyContent: 'space-around',
+  },
+  modal: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  gif: {
+    objectFit: 'contain',
+    height: '100%',
+  },
+  close: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+  },
+  buttons: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    width: '100%',
+    '& a': {
+      textDecoration: 'none',
+      color: 'inherit',
+    },
   },
 }));

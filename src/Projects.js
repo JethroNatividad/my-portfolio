@@ -2,6 +2,7 @@ import React from 'react';
 import Project from './Project';
 import useStyles from './Projects.styles';
 import ScrollableAnchor from 'react-scrollable-anchor';
+import { ProjectsData } from './content';
 function Projects() {
   const classes = useStyles();
   return (
@@ -10,8 +11,10 @@ function Projects() {
         <div className={classes.container}>
           <div className='app__projectsTag'>- Projects</div>
           <div className={classes.list}>
-            <Project />
-            <Project />
+            {/*  title, description, imageUrl, gif, siteUrl, github  */}
+            {ProjectsData.map((project) => (
+              <Project {...project} />
+            ))}
           </div>
         </div>
       </div>

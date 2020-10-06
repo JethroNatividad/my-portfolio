@@ -2,6 +2,7 @@ import { Typography } from '@material-ui/core';
 import React from 'react';
 import useStyles from './Skills.styles';
 import ScrollableAnchor from 'react-scrollable-anchor';
+import { SkillsData } from './content';
 function Skills() {
   const classes = useStyles();
   return (
@@ -9,25 +10,19 @@ function Skills() {
       <div className={classes.root}>
         <div className='app__skillsList'>
           <Typography variant='h5'>Skills</Typography>
-          <li>Programming</li>
-          <li>Programming</li>
-          <li>Programming</li>
-          <li>Programming</li>
+          {SkillsData.skills.map((skill) => (
+            <li>{skill}</li>
+          ))}
         </div>
         <div className='app__technologiesList'>
           <Typography variant='h5'>Technology</Typography>
-          <li>Reactjs</li>
-          <li>Reactjs</li>
-          <li>Reactjs</li>
-          <li>Reactjs</li>
+          {SkillsData.technology.map((tech) => (
+            <li>{tech}</li>
+          ))}
         </div>
         <div className='app__skillsText'>
           <Typography variant='h5'>Text</Typography>
-          <p>
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make
-          </p>
+          <p>{SkillsData.text}</p>
         </div>
       </div>
     </ScrollableAnchor>
