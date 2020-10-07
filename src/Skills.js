@@ -21,7 +21,7 @@ function Skills() {
           ))}
         </div>
         <div className='app__skillsText'>
-          <Typography variant='h5'>Text</Typography>
+          <Typography variant='h5'>~</Typography>
           <p>{SkillsData.text}</p>
         </div>
       </div>

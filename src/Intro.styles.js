@@ -3,8 +3,7 @@ import { makeStyles } from '@material-ui/core';
 export default makeStyles((theme) => ({
   root: {
     width: '100vw',
-    backgroundImage:
-      'url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapercave.com%2Fwp%2FfxKGuF6.jpg&f=1&nofb=1)',
+    backgroundImage: 'url(https://i.imgur.com/HqbVKEi.jpeg)',
     backgroundAttachment: 'fixed',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
@@ -27,6 +26,11 @@ export default makeStyles((theme) => ({
       fontWeight: 300,
     },
   },
-  name: {},
-  text: {},
+  name: {
+    fontSize: '20px',
+  },
+  text: {
+    fontSize: '30px',
+    fontWeight: '600',
+  },
 }));

@@ -24,8 +24,8 @@ export default makeStyles((theme) => ({
   },
   preview: {
     position: 'absolute',
-    minWidth: '70%',
-    height: '500px',
+    width: '70%',
+
     border: '2px solid #000',
     padding: theme.spacing(2, 4, 3),
     display: 'flex',
@@ -39,6 +39,7 @@ export default makeStyles((theme) => ({
   gif: {
     objectFit: 'contain',
     height: '100%',
+    width: '100%',
   },
   close: {
     position: 'absolute',

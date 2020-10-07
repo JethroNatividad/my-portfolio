@@ -6,7 +6,7 @@ export default makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'row',
     backgroundColor: '#1d1e22',
-
+    paddingBottom: '100px',
     justifyContent: 'space-around',
     alignItems: 'flex-start',
     paddingTop: 30,

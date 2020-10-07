@@ -6,6 +6,7 @@ export default makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     backgroundColor: '#393f4d',
+    paddingBottom: '100px',
   },
   container: {
     margin: '20px 30px',

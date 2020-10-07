@@ -14,8 +14,7 @@ function About() {
           <SectionTag name='about' />
           <div className={classes.innerContainer}>
             <Typography variant='h4' className={classes.text}>
-              Lorem ipsum Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
-              lorem
+              A Full Stack Developer. Is Flexible, can learn fast.
             </Typography>
             <Typography variant='h5' className={classes.email}>
               Natividad.jethro69@gmail.com
@@ -23,10 +22,18 @@ function About() {
           </div>
           <div className={classes.social}>
             {[
-              { display: <LinkedInIcon />, link: '#' },
-              { display: <GitHubIcon />, link: '#' },
+              {
+                display: <LinkedInIcon />,
+                link: 'https://www.linkedin.com/in/jethro-natividad-751a121b2/',
+              },
+              {
+                display: <GitHubIcon />,
+                link: 'https://github.com/JethroSama',
+              },
             ].map((item) => (
-              <a href={item.link}>{item.display}</a>
+              <a href={item.link} target='_blank' rel='noopener noreferrer'>
+                {item.display}
+              </a>
             ))}
           </div>
         </div>

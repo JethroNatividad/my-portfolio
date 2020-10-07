@@ -23,8 +23,11 @@ export default makeStyles((theme) => ({
       margin: '0 20px',
       fontWeight: '400',
       [theme.breakpoints.down('xs')]: {
-        fontSize: '13px',
+        fontSize: '14px',
         margin: '0 10px',
+      },
+      '&:hover': {
+        color: 'white',
       },
     },
     marginRight: '2%',
