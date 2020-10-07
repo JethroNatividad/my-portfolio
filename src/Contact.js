@@ -1,13 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, TextField, Typography } from '@material-ui/core';
 import useStyles from './Contact.styles';
 import emailjs from 'emailjs-com';
 import useInputState from './hooks/useInputState';
 import ScrollableAnchor from 'react-scrollable-anchor';
+import Snackbar from '@material-ui/core/Snackbar';
+import Alert from '@material-ui/lab/Alert';
 function Contact() {
   const [name, handleName, resetName] = useInputState('');
   const [email, handleEmail, resetEmail] = useInputState('');
   const [message, handleMessage, resetMessage] = useInputState('');
+  const [snackBar, setSnackBar] = useState({ open: false, status: 'success' });
+
+  const handleClose = () => {
+    setSnackBar({ ...snackBar, open: false });
+  };
+  const handleOpen = (status) => {
+    setSnackBar({ status: status, open: true });
+  };
   const classes = useStyles();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,10 +30,10 @@ function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          handleOpen('success');
         },
         (error) => {
-          console.log(error.text);
+          handleOpen('error');
         }
       );
     resetName();
@@ -41,6 +51,7 @@ function Contact() {
             margin='normal'
             label='Name'
             name='user_name'
+            required
           />
           <TextField
             type='email'
@@ -49,6 +60,7 @@ function Contact() {
             margin='normal'
             label='Email'
             name='user_email'
+            required
           />
           <TextField
             value={message}
@@ -59,11 +71,23 @@ function Contact() {
             multiline
             rows={10}
             variant='outlined'
+            required
           />
           <Button type='submit' variant='border' color='primary'>
             Send
           </Button>
         </form>
+        <Snackbar
+          open={snackBar.open}
+          autoHideDuration={6000}
+          onClose={handleClose}
+        >
+          <Alert onClose={handleClose} severity={snackBar?.status}>
+            {snackBar.status === 'success'
+              ? 'Message sent'
+              : 'Something went wrong'}
+          </Alert>
+        </Snackbar>
       </div>
     </ScrollableAnchor>
   );

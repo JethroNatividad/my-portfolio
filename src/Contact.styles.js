@@ -5,10 +5,11 @@ export default makeStyles((theme) => ({
     minHeight: 700,
     display: 'flex',
     flexDirection: 'column',
-    backgroundColor: '#fff',
+    backgroundColor: 'gray',
     alignItems: 'center',
     '& form': {
       width: '450px',
+      backgroundColor: '#fff',
       [theme.breakpoints.down('xs')]: {
         width: '70%',
       },
